@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121417;
+  color: white;
+}
+
+.navbar {
+  background-color: #1c1f24;
+  padding: 15px 40px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  padding: 40px;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.user-card {
+  background-color: #1c1f24;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+  background-color: #242830;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #2a2f38;
+  margin: 0 auto 15px auto;
+}
+
+.username {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.profile-card {
+  background-color: #1c1f24;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.stat-box {
+  background-color: #242830;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e2231a;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  background-color: #ff3b30;
+}

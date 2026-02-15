@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= user.username %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="navbar">MiniBlox</div>
+
+  <div class="profile-card">
+    <div class="avatar"></div>
+    <h1><%= user.username %></h1>
+    <p><%= user.bio %></p>
+
+    <div class="stats">
+      <div class="stat-box">
+        <strong><%= user.level %></strong>
+        <div>Level</div>
+      </div>
+
+      <div class="stat-box">
+        <strong><%= user.xp %></strong>
+        <div>XP</div>
+      </div>
+
+      <div class="stat-box">
+        <strong><%= user.currency %></strong>
+        <div>Coins</div>
+      </div>
+    </div>
+
+    <a class="button" href="/">Back to Players</a>
+  </div>
+
+</body>
+</html>

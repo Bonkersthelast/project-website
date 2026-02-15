@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MiniBlox</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="navbar">MiniBlox</div>
+
+  <div class="container">
+    <h2>Player Directory</h2>
+
+    <div class="user-grid">
+      <% users.forEach(user => { %>
+        <a href="/profile/<%= user.username %>">
+          <div class="user-card">
+            <div class="avatar"></div>
+            <div class="username"><%= user.username %></div>
+          </div>
+        </a>
+      <% }) %>
+    </div>
+
+    <br>
+    <a class="button" href="/create">+ Create Player</a>
+  </div>
+
+</body>
+</html>
